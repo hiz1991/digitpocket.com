@@ -1,0 +1,27 @@
+doctype html
+html
+   head
+      meta(name='viewport', content="user-scalable=no,width=device-width")
+      title Terek Messenger
+      script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js')
+      script(src="/socket.io/socket.io.js")
+      script(src="js/script.js")
+      script(src="js/testupload.js")
+      script(src="js/jscroll.js")
+      link(rel='stylesheet', href='styles/style.css')
+   body
+      div(align='middle').container
+         //- header
+            //- h3 Terek Messenger
+         div#chat
+            div#content
+            div#controls
+               div#register
+                  input(type='text', placeholder='Enter your name')#nameInput
+                  button#nameButton &#8629;
+               div#chatControls
+                  button#smile : )
+                  input(type='text', placeholder='Enter message')#messageInput
+                  button#submit &#8629;
+   script(src="js/easyLog.js")
+   

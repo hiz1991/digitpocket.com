@@ -1,0 +1,222 @@
+#easyLog{
+  background:lightgrey;
+  position:fixed;
+  left:10px;
+  top:10px;
+  border:1px solid blue;
+  max-height: 200px;
+  /*max-width: 200px;*/
+}
+
+audio
+{
+  width: 200px;
+}
+video
+{
+  width: 200px;
+}
+
+html,body
+{
+  margin: 0;
+  /*margin-left: 35%;*/
+    -webkit-transition: all 200ms ease-out .2s;
+    -moz-transition: all 200ms ease-out .2s;
+    -o-transition: all 200ms ease-out .2s;
+    transition: all 200ms ease-out .2s;
+}
+h3
+{
+  /*margin-left: 35%;*/
+  color:rgb(74,175,255);
+}
+
+.message > img
+{
+  width:100px;
+  /*border: 1px solid #666;*/
+  -webkit-border-radius: 5px !important;
+  -moz-border-radius: 5px !important;
+  border-radius: 5px !important; 
+  overflow:hidden;
+}
+#controlsImg
+{
+  width:50px;
+  height:40px;
+}
+#controls
+{
+  /*-webkit-box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow:    0px 0px 9px 0px rgba(0, 0, 0, 0.2);
+  box-shadow:         0px 0px 9px 0px rgba(0, 0, 0, 0.2);*/
+  position:absolute;
+  bottom: 0;
+  width:100%;
+  height:10%;
+  background: rgba(255,255,255,1);
+}
+
+#controls *
+{
+  margin-top: 1.5%;
+  margin-left: 3px;
+  margin-right: 3px;
+}
+
+#nameInput, #messageInput
+{
+  /*float:left;*/
+  /*margin:5px;*/
+  outline: none;
+  padding:5px; 
+  /*border:1px solid #ccc; */
+  border:transparent;
+  border-bottom: 1px solid #ccc;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  width:62%;
+  margin-top: -33.5%;
+}
+
+#nameInput:focus, #messageInput:focus
+{
+  -webkit-box-shadow: 0px 1px 0px 0px rgba(81, 203, 238, .5);
+  -moz-box-shadow:    0px 1px 0px 0px rgba(81, 203, 238, .5);
+  box-shadow:         0px 1px 0px 0px rgba(81, 203, 238, .5);
+}
+
+#submit, #nameButton, #smile
+{
+  outline:none;
+  padding: 0px;
+  text-align: center;
+  vertical-align:middle
+  color:white;
+  width:13%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+
+  background:#ccc;
+  border:0 none;
+  cursor:pointer;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px; 
+}
+
+#smile
+{
+  background: #ffc007;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  writing-mode: tb-rl;
+  /*float:left;*/
+  width:25px;
+  height:25px;
+  padding:0;
+  padding-top: 5px;
+  padding-bottom: 15px;
+}
+
+#friend
+{
+  background:rgba(0,113,218,0.5);
+  color:white;
+  /*position: relative;*/
+  float: right;
+  /*right:0px;*/
+  text-align:right;
+  /*margin-right: auto;*/
+  /*background: #22bfbb;*/
+  border-radius: 77px 150px 0px 150px;
+  -moz-border-radius: 77px 150px 0px 150px;
+  -webkit-border-radius: 77px 150px 0px 150px;
+  border: 0px solid #000000;
+}
+.message
+{
+  text-align: left;
+  color:black;
+  max-width: 99%;
+  float:left;
+  clear: both;
+  margin: auto;
+  margin-top:5px;
+  background:#fff;
+  padding:3px;
+  padding-left:7px;
+  padding-right:7px;
+
+  border-radius: 150px 77px 150px 0px;
+  -moz-border-radius: 150px 77px 150px 0px;
+  -webkit-border-radius: 150px 77px 150px 0px;
+  border: 0px solid #000000;
+}
+
+#content
+{
+  color:white;
+  /*background: #f3f3f3;*/
+  /*border: 1px solid #cccccc;*/
+  padding: 3px;
+  margin:1%;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  /*width: 90%;*/
+  /*margin: 0 auto;*/
+  /*border: 1px solid rgba(127,255,245,0.5);*/
+  height:87%;
+  overflow: auto;
+  overflow-x:hidden;
+
+}
+#chat
+{
+  margin-top:-1px;
+  overflow:hidden;
+  background-image:url('/resources/images/b.jpg');
+  /*margin-left: 35%;*/
+  position:relative;
+  /*padding:5px;*/
+  height:565px;
+  width:355px;
+  /*background: rgba(110,199,255,0.1);*/
+  /*background:#000;*/
+  border: 1px solid LightSkyBlue;
+  /*-webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;*/
+}
+.messageImage
+{
+  background:transparent !important;
+}
+.messageAudio
+{
+  width:200px;
+}
+
+::-webkit-scrollbar-track
+{
+  border-radius: 10px;
+  /*-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);*/
+  background-color: transparent;
+}
+
+::-webkit-scrollbar
+{
+  width: 6px;
+  /*background-color: #fff;*/
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb
+{
+  border-radius: 10px;
+  background-color: #bfbfbf;
+}
